@@ -1,6 +1,6 @@
 package MODELO;
 
-public class CLASE_PROVEEDOR {
+public class CLASE_PROVEEDOR extends CLASE_PRODUCTO{
     
     //ATRIBUTOS
     private String ruc_proveedor;
@@ -8,6 +8,8 @@ public class CLASE_PROVEEDOR {
     private String razon_social_proveedor;
     private String pagina_web_proveedor;
     private String direccion_proveedor;
+    private String marca_proveedor;
+    private String nombre_producto;
     
     //ENCAPSULAMIENTOS
     public String getRuc_proveedor() {
@@ -49,5 +51,25 @@ public class CLASE_PROVEEDOR {
     public void setDireccion_proveedor(String direccion_proveedor) {
         this.direccion_proveedor = direccion_proveedor;
     }
+
+    public String getMarca_proveedor() {
+        return marca_proveedor;
+    }
+
+    public void setMarca_proveedor(String marca_proveedor) {
+        this.marca_proveedor = marca_proveedor;
+    }
+
+    public String getNombre_producto() {
+        return nombre_producto;
+    }
+
+    public void setNombre_producto(String nombre_producto) {
+        this.nombre_producto = nombre_producto;
+    }
+    
+    
+    
+    
     
 }

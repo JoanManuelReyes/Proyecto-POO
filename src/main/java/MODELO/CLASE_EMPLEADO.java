@@ -1,32 +1,14 @@
 package MODELO;
 
-//IMPORTAMOS 
-import java.text.DecimalFormat;
-
-public abstract class  CLASE_EMPLEADO {
+public class CLASE_EMPLEADO {
     
     //ATRIBUTOS
     private String codigo_empleado;
     private String nombre_empleado;
     private String telefono_empleado;
     private String direccion_empleado;
-    
-    //CODIGO GENERADO
-    static int cuenta = 1;
-    
-    
-    //CONSTRUCTOR PASANDO VALORES 
-    public CLASE_EMPLEADO(String nombre_empleado, String telefono_empleado, String direccion_empleado) {
-        DecimalFormat sd = new DecimalFormat("E000");
-        this.codigo_empleado = sd.format(cuenta);
-        this.nombre_empleado = nombre_empleado;
-        this.telefono_empleado = telefono_empleado;
-        this.direccion_empleado = direccion_empleado;
-        cuenta++;
-    }
-    
-    //ABSTRACTO: es porque no se va a calcular en esta clase, sino en cada clase
-    public abstract double sueldo_empleado();
+    private String correo_empleado;
+    private String contraseña_empleado;
     
 
     //ENCAPSULAMIENTOS
@@ -61,5 +43,23 @@ public abstract class  CLASE_EMPLEADO {
     public void setDireccion_empleado(String direccion_empleado) {
         this.direccion_empleado = direccion_empleado;
     }
+
+    public String getCorreo_empleado() {
+        return correo_empleado;
+    }
+
+    public void setCorreo_empleado(String correo_empleado) {
+        this.correo_empleado = correo_empleado;
+    }
+
+    public String getContraseña_empleado() {
+        return contraseña_empleado;
+    }
+
+    public void setContraseña_empleado(String contraseña_empleado) {
+        this.contraseña_empleado = contraseña_empleado;
+    }
+    
+    
     
 }

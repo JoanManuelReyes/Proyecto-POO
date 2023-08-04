@@ -1,21 +1,15 @@
 package MODELO;
 
-public class CLASE_PRODUCTO {
+public class CLASE_PRODUCTO{
     
     //ATRIBUTOS
     private int codigo_producto;
     private String descripcion_producto;
     private double precio_unitario_producto;
     private int stock_producto;
-    
-    //CONSTRUCTOR PASANDO VALORES
-    public CLASE_PRODUCTO(int codigo_producto, String descripcion_producto, double precio_unitario_producto, int stock_producto) {
-        this.codigo_producto = codigo_producto;
-        this.descripcion_producto = descripcion_producto;
-        this.precio_unitario_producto = precio_unitario_producto;
-        this.stock_producto = stock_producto;
-    }
-    
+    private int categoria_producto;
+    private String marca_producto; 
+    private String nombre_categoria;
     
     //ENCAPSULAMIENTOS
     public int getCodigo_producto() {
@@ -49,5 +43,34 @@ public class CLASE_PRODUCTO {
     public void setStock_producto(int stock_producto) {
         this.stock_producto = stock_producto;
     }
+
+    public int getCategoria_producto() {
+        return categoria_producto;
+    }
+
+    public void setCategoria_producto(int categoria_producto) {
+        this.categoria_producto = categoria_producto;
+    }
+
+    public String getMarca_producto() {
+        return marca_producto;
+    }
+
+    public void setMarca_producto(String marca_producto) {
+        this.marca_producto = marca_producto;
+    }
+
+    public String getNombre_categoria() {
+        return nombre_categoria;
+    }
+
+    public void setNombre_categoria(String nombre_categoria) {
+        this.nombre_categoria = nombre_categoria;
+    }
+    
+    
+    
+    
+    
     
 }
