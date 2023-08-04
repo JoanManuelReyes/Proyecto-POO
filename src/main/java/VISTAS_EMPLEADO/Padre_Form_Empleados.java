@@ -212,7 +212,9 @@ public class Padre_Form_Empleados extends javax.swing.JFrame {
 
         jPanel2.add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 40));
 
+        btnReporteVentas.setBackground(new java.awt.Color(220, 169, 194));
         btnReporteVentas.setText("Ver reporte ventas");
+        btnReporteVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnReporteVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReporteVentasActionPerformed(evt);
