@@ -204,7 +204,6 @@ public class Padre_Form_Productos extends javax.swing.JFrame {
 
         jPanel1.add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 40));
 
-        jButton1.setBackground(new java.awt.Color(91, 168, 75));
         jButton1.setText("GRAFICO STOCK > 30");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
